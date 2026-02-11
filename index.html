@@ -2,12 +2,8 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Otávio | Portfólio Estratégico</title>
-
-  <meta name="description" content="Portfólio profissional com vídeos, artes, fotografia, cases e relatórios estratégicos.">
-  <meta property="og:title" content="Otávio | Portfólio Estratégico">
-  <meta property="og:type" content="website">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfólio | Otávio</title>
 
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -17,40 +13,109 @@
 <header class="header">
   <div class="logo">OTÁVIO</div>
 
-  <nav>
-    <button data-filter="all">Todos</button>
-    <button data-filter="videos">Vídeos</button>
-    <button data-filter="artes">Artes</button>
-    <button data-filter="fotografia">Fotografia</button>
-    <button data-filter="textos">Textos</button>
-    <button data-filter="publicacoes">Publicações</button>
-    <button data-filter="cases">Cases</button>
-    <button data-filter="relatorios">Relatórios</button>
+  <nav class="nav">
+    <a href="#home">Home</a>
+    <a href="#videos">Vídeos</a>
+    <a href="#artes">Artes</a>
+    <a href="#fotografia">Fotografia</a>
+    <a href="#textos">Textos</a>
+    <a href="#publicacoes">Publicações</a>
+    <a href="#cases">Cases</a>
+    <a href="#relatorios">Relatórios</a>
   </nav>
 
-  <input type="text" id="search" placeholder="Buscar..." />
+  <input 
+    type="text" 
+    id="searchInput" 
+    placeholder="Buscar no portfólio..."
+  />
 </header>
 
-<section class="hero">
+<section id="home" class="hero">
   <h1>Portfólio Criativo & Estratégico</h1>
-  <p>Projetos que unem estética, performance e resultado.</p>
+  <p>Marketing, audiovisual, fotografia, escrita e projetos de impacto.</p>
 </section>
 
-<section id="content" class="grid"></section>
+<!-- VÍDEOS -->
+<section id="videos" class="section">
+  <h2>🎥 Vídeos</h2>
 
-<div id="modal" class="modal">
-  <span id="closeModal">×</span>
-  <img id="modalImg">
-</div>
+  <div class="grid">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+  </div>
+</section>
 
-<footer>
-  © 2026 • Otávio • Estratégia & Criação
+<!-- ARTES -->
+<section id="artes" class="section">
+  <h2>🎨 Artes</h2>
+
+  <div class="grid">
+    <img src="assets/images/arte1.jpg" alt="Arte 1">
+    <img src="assets/images/arte2.jpg" alt="Arte 2">
+  </div>
+</section>
+
+<!-- FOTOGRAFIA -->
+<section id="fotografia" class="section">
+  <h2>📸 Fotografia</h2>
+
+  <div class="grid">
+    <img src="assets/images/foto1.jpg">
+    <img src="assets/images/foto2.jpg">
+  </div>
+</section>
+
+<!-- TEXTOS -->
+<section id="textos" class="section">
+  <h2>✍️ Textos</h2>
+
+  <ul class="list">
+    <li>
+      <h3>Título do Texto</h3>
+      <p>Resumo curto do conteúdo...</p>
+    </li>
+  </ul>
+</section>
+
+<!-- PUBLICAÇÕES -->
+<section id="publicacoes" class="section">
+  <h2>📰 Publicações</h2>
+
+  <ul class="list">
+    <li>
+      <a href="#" target="_blank">Link da publicação</a>
+    </li>
+  </ul>
+</section>
+
+<!-- CASES -->
+<section id="cases" class="section">
+  <h2>🚀 Cases de Sucesso</h2>
+
+  <div class="card">
+    <h3>Nome do Projeto</h3>
+    <p>Problema → Estratégia → Resultado</p>
+  </div>
+</section>
+
+<!-- RELATÓRIOS -->
+<section id="relatorios" class="section">
+  <h2>📄 Relatórios & Projetos</h2>
+
+  <ul class="list">
+    <li>
+      <a href="assets/pdfs/relatorio.pdf" target="_blank">
+        📎 Relatório de Projeto X
+      </a>
+    </li>
+  </ul>
+</section>
+
+<footer class="footer">
+  <p>© 2026 • Otávio • Portfólio Profissional</p>
 </footer>
 
-<script src="assets/js/data.js"></script>
-<script src="assets/js/app.js"></script>
-
-<!-- Google Analytics (coloque seu ID depois) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXX"></script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>
